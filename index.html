@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Brust</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="./images/logo.png">
+  <!-- google font setup -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- font awesome setup -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- tailwind setup with library -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- CSS -->
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="font-lato">
+  <header>
+    <!-- nav -->
+    <nav class="container mx-auto mt-12">
+      <div class="navbar bg-[#F85559] lg:flex hidden  md:hidden rounded-full lg:px-[50px]  py-4 ">
+        <div class="navbar-start">
+          <div class="navbar-center hidden lg:flex">
+            <ul class=" menu-horizontal text-white bg-none ">
+              <a class="text-lg mr-6 " href="#">
+                <li>Home</li>
+              </a>
+              <a class="text-lg font-medium mr-6 " href="#">
+                <li>Shop</li>
+              </a>
+              <a class="text-lg font-medium mr-6" href="#">
+                <li>Contact</li>
+              </a>
+              <a class="text-lg font-medium mr-6 " href="#">
+                <li>About Us</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center lg:flex">
+          <img src="images/logo.png" alt="">
+          <a class="text-[40px] text-white ml-4 cursor-pointer font-bold">Fruit Burst</a>
+        </div>
+        <div class="navbar-end lg:ml-6">
+          <input type="text" placeholder="Search here"
+            class=" w-full max-w-xs rounded-full  input focus:outline-0 border-0 " />
+          <span class="relative -left-10">
+            <i class="fa-solid fa-magnifying-glass cursor-pointer" style="color: #000000;"></i>
+          </span>
+        </div>
+      </div>
+      <div class="navbar lg:hidden bg-base-100">
+        <div class="flex-1">
+          <img src="images/logo.png" class="w-10" alt="">
+          <a class="text-xl font-bold text-[#121212] ml-2">Fruit Burst</a>
+        </div>
+        <div class="flex-none">
+          <div class="dropdown">
+            <label tabindex="0" class="cursor-pointer ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#000" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-8 rounded-box w-40  right-0">
+              <a class="text-lg font-medium" href="#">
+                <li>Home</li>
+              </a>
+              <a class="text-lg  font-medium" href="#">
+                <li>Shop</li>
+              </a>
+              <a class="text-lg  font-medium" href="#">
+                <li>Contact</li>
+              </a>
+              <a class="text-lg  font-medium" href="#">
+                <li>About Us</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</body>
+
+</html>
